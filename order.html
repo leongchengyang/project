@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/png" href="image/logo.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="image/logo.png" sizes="16x16" />
+	<title>Welcome to SUC Market Place</title>
+	<link rel="stylesheet" href="html.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<div class="navigation">
+		<a class="active" href="index.html"><img src="image/logo.png" class="img-fluid rounded-circle" width="15">  SUC Market Place</a>
+  		<a href="index.html">Product</a>
+  		<a href="order.html">Order</a>
+  		<a href="cu.html">Contact Us</a>
+        <div class="real-time">
+          <button type="button" onclick="document.getElementById('time').innerHTML = Date()">&#128512; Click to display Date and Time.&#128512;</button>
+			   <p id="time"></p>
+        </div>
+			</div>
+	</header>
+	<body style="background-color: white; text-align: center;">
+		<section class="order">
+        <form action="result.html" method="GET">
+            <div><h1 style="text-decoration: underline;">Order Form</h1></div>
+            <br>
+            <div class="Order">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Type full name as your IC" required placeholder="EXP:XXXX">
+        </div>
+        <br>
+        <div>
+            <label for="IC">IC number:</label>
+            <input type="tel" name="IC" id="IC" placeholder="EXP:000000001111" required>
+        </div>
+        <br>
+        <div>
+            <label for="contactNO">Contact number:</label>
+            <input type="tel" name="contact number" id="contactNO" required placeholder="EXP:012-3456789">
+        </div>
+        <br>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required placeholder="EXP:XXXX@gmail.com">
+        </div>
+        <br>
+        <div>
+            <label for="model">Model:</label>
+            <select name="model" id="model">
+                <option value="HP OMEN 15 Laptop">HP OMEN 15 Laptop</option>
+                <option value="Acer Predator Helios 700">Acer Predator Helios 700</option>
+                <option value="MSI GE63 Raider RGB 8SG">MSI GE63 Raider RGB 8SG</option>
+                <option value="Asus ROG GL503VS Scar Edition">Asus ROG GL503VS Scar Edition</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1" max="20" required>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success">Sumbit</button>
+    </div>
+    <br>
+    <br>
+        <a href="index.html"><button class="btn btn-danger btn-xs" style="size: b5;">Back to Homepage</button>
+    </form>
+</section>
+<style>
+    .Order
+    {   
+    border-style: solid;
+    background-color: white; 
+    border-color: blue;
+    border-style: 3px;
+    display: inline-block;
+    }
+</style>
+</body>
+</html>
